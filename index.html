@@ -11,8 +11,9 @@
     <script src="https://kit.fontawesome.com/30b33c1776.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
@@ -20,7 +21,6 @@
 <body>
 
     <!--NAVBAR-->
-
     <nav class="navbar navbar-expand-lg fixed-top bg-primary p-2" style="--bs-bg-opacity: .2;">
         <div class="container-fluid">
             <a class="navbar-brand text-white p-2" href="#">
@@ -37,23 +37,23 @@
                         <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Quienes Somos</a>
+                        <a class="nav-link text-white" href="#quienes_somos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Destacados</a>
+                        <a class="nav-link text-white" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contacto</a>
+                        <a class="nav-link text-white" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!--HEADER CAROUSEL-->
     <header>
         <div id="carouselExampleIndicators" class="carousel slide">
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -87,15 +87,16 @@
     </header>
 
     <!--QUIENES SOMOS-->
-    <section class="mx-auto p-5 d-none d-md-block">
-        <div class="text-white text-center mb-5"> 
+    <section class="mx-auto p-5 d-none d-md-block" id="quienes_somos">
+        <div class="text-white text-center mb-5">
             <h1>¿QUIÉNES SOMOS?</h1>
             <hr>
         </div>
-        <div class="card-group row-cols-md-3 gap-4">
+
+        <div class="card-group row-cols-md-3">
             <div class="card col bg-black text-white">
 
-                <div class="icon text-center bg-primary text-white">
+                <div class="icon text-center bg-info text-white">
                     <i class="fa-solid fa-plane fa-2x"></i>
                 </div>
                 <div class="card-body">
@@ -119,16 +120,15 @@
                         atque?</p>
 
                 </div>
-                <div class="icon text-center bg-primary text-white">
+                <div class="icon text-center bg-info text-white">
                     <i class="fa-solid fa-mountain fa-2x"></i>
                 </div>
             </div>
 
             <div class="card col bg-black text-white">
-                <div class="icon text-center bg-primary text-white">
+                <div class="icon text-center bg-info text-white">
                     <i class="fa-solid fa-route fa-2x"></i>
                 </div>
-
 
                 <div class="card-body">
 
@@ -144,50 +144,63 @@
     </section>
 
     <!--DESTACADOS-->
-    <div class="row row-cols-1 row-cols-md-4 g-4 p-5">
-        <div class="col">
-            <div class="card">
-                <img src="assets\img\card1.jpg" class="card-img-top" alt="..." style="height: 220px; object-fit: cover;">
-                <div class="card-body bg-primary text-white">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+
+    <section class="container-fluid" id="destacados">
+        <div class="text-white text-center mb-5">
+            <h1>DESTACADOS</h1>
+            <hr>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 p-5">
+
+            <div class="col">
+                <div class="card">
+                    <img src="assets\img\card1.jpg" class="card-img-top" alt="..."
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body bg-info text-white">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets\img\card2.jpg" class="card-img-top" alt="..."
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body bg-info text-white">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets\img\card3.jpg" class="card-img-top" alt="..."
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body bg-info text-white">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets\img\card4.jpg" class="card-img-top" alt="..."
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body bg-info text-white">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\img\card2.jpg" class="card-img-top" alt="..." style="height: 220px; object-fit: cover;">
-                <div class="card-body bg-primary text-white">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\img\card3.jpg" class="card-img-top" alt="..." style="height: 220px; object-fit: cover;">
-                <div class="card-body bg-primary text-white">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\img\card4.jpg" class="card-img-top" alt="..." style="height: 220px; object-fit: cover;">
-                <div class="card-body bg-primary text-white">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     <!--FORMULARIO CONTACTO-->
-    <section class="text-white p-5">
+    <section class="container-fluid text-white p-5" id="contacto">
         <h1 class="text-center">CONTACTO</h1>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -195,34 +208,38 @@
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Correo</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@ejemplo.com">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <div class="text-end">
-            <button type="button" class="btn btn-primary">Enviar</button>
+        <div class="text-center">
+            <button id="target" type="button" class="btn btn-primary">Enviar</button>
         </div>
     </section>
-    <!--FOOTER-->
 
+    <!--FOOTER-->
     <footer class="bg-primary text-white p-5">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h4>VIAJES CHILE</h4>
             </div>
             <div class="col-md-6 text-center">
-                <a href="https://github.com/" class="text-reset text-decoration-none" target="_blank">
+                <a href="https://github.com/" class="text-reset text-decoration-none" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-title="GITHUB" target="_blank">
                     <i class="fa-brands fa-github fa-2x"></i>
                 </a>
-                <a href="https://linkedin.com/" class="text-reset text-decoration-none" target="_blank">
+                <a href="https://linkedin.com/" class="text-reset text-decoration-none" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-title="LINKEDIN" target="_blank">
                     <i class="fa-brands fa-linkedin fa-2x"></i>
                 </a>
-                <a href="https://x.com/" class="text-reset text-decoration-none" target="_blank">
+                <a href="https://x.com/" class="text-reset text-decoration-none" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-title="X / TWITTER" target="_blank">
                     <i class="fa-brands fa-x-twitter fa-2x"></i>
                 </a>
-                <a href="https://facebook.com/" class="text-reset text-decoration-none" target="_blank">
+                <a href="https://facebook.com/" class="text-reset text-decoration-none" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-title="FACEBOOK" target="_blank">
                     <i class="fa-brands fa-facebook fa-2x"></i>
                 </a>
             </div>
